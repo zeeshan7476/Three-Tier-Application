@@ -70,6 +70,7 @@ The project is containerized with **Docker**, deployed to **AWS ECR**, and orche
                           ▼
                      🌐 External User
 
+---
 
 > 🧠 **Note**: Ingress Controller handles internal routing between services. ALB (Application Load Balancer) exposes the app to external users securely.
 
@@ -91,6 +92,8 @@ three-tier-app/
 │   ├── mongo-deployment.yaml
 │   ├── ingress.yaml                     
 ├── README.md
+
+---
 
 🚀 Project Workflow
 
@@ -151,6 +154,8 @@ Or configure DNS to point to the ALB.
 Example .env for backend:
 MONGO_URI=mongodb://mongo-service:27017/mydb
 PORT=5000
+
+---
 
 🚀 Deployment Guide (Step by Step)
 Step 1: IAM Configuration
@@ -240,6 +245,7 @@ Terminate the EC2 instance from step 2.
 Delete the Load Balancer from steps 9–10.
 
 Delete Security Groups in EC2 console.
+---
 
 📁 Future Improvements
 
@@ -250,6 +256,8 @@ Monitoring (Prometheus + Grafana)
 Managed MongoDB (Atlas)
 
 SSL/TLS via cert-manager
+
+---
 
 📝 License
 
