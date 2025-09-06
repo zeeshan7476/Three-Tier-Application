@@ -95,7 +95,7 @@ three-tier-app/
 
 ---
 
-🚀 Project Workflow
+## 🚀 Project Workflow
 
 1.Clone the Repository
 git clone https://github.com/your-username/three-tier-app.git
@@ -142,14 +142,14 @@ Annotate the ingress resources with ALB-specific configurations
 
 Ensure proper IAM roles and permissions are attached to your cluster
 
-🌐 Application Access
+## 🌐 Application Access
 
 Once the Ingress Controller and ALB are configured correctly, access your application via:
 http://<your-alb-dns-name>
 
 Or configure DNS to point to the ALB.
 
-📦 Environment Variables
+## 📦 Environment Variables
 
 Example .env for backend:
 MONGO_URI=mongodb://mongo-service:27017/mydb
@@ -157,7 +157,7 @@ PORT=5000
 
 ---
 
-🚀 Deployment Guide (Step by Step)
+## 🚀 Deployment Guide (Step by Step)
 Step 1: IAM Configuration
 
 Create a user eks-admin with AdministratorAccess.
@@ -237,7 +237,7 @@ helm install aws-load-balancer-controller eks/aws-load-balancer-controller -n ku
 kubectl get deployment -n kube-system aws-load-balancer-controller
 kubectl apply -f full_stack_lb.yaml
 
-🧹 Cleanup
+## 🧹 Cleanup
 eksctl delete cluster --name three-tier-cluster --region us-west-2
 
 Terminate the EC2 instance from step 2.
@@ -247,7 +247,7 @@ Delete the Load Balancer from steps 9–10.
 Delete Security Groups in EC2 console.
 ---
 
-📁 Future Improvements
+## 📁 Future Improvements
 
 CI/CD with GitHub Actions
 
@@ -259,7 +259,7 @@ SSL/TLS via cert-manager
 
 ---
 
-📝 License
+## 📝 License
 
 MIT License
 
