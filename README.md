@@ -240,16 +240,21 @@ kubectl apply -f full_stack_lb.yaml
 eksctl delete cluster --name three-tier-cluster --region us-west-2
 ```
 Terminate the EC2 instance from step 2.
+
 Delete the Load Balancer from steps 9–10.
+
 Delete Security Groups in EC2 console.
 
 
 ## 📁 Future Improvements
 
-CI/CD with GitHub Actions
-Monitoring (Prometheus + Grafana)
-Managed MongoDB (Atlas)
-SSL/TLS via cert-manager
+CI/CD with GitHub Actions.
+
+Monitoring (Prometheus + Grafana).
+
+Managed MongoDB (Atlas).
+
+SSL/TLS via cert-manager.
 
 ## 📝 License
 
