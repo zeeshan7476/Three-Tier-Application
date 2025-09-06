@@ -94,16 +94,15 @@ three-tier-app/
 ├── README.md
 
 ---
-
 ## 🚀 Project Workflow
 
-1.Clone the Repository
-git clone https://github.com/your-username/three-tier-app.git
-cd three-tier-app
-2.Build Docker Images
-# Frontend (React)
-cd Frontend
-docker build -t your-ecr-url/client .
+ 1.Clone the Repository
+ git clone https://github.com/your-username/three-tier-app.git
+ cd three-tier-app
+ 2.Build Docker Images
+ # Frontend (React)
+ cd Frontend
+ docker build -t your-ecr-url/client .
 
 # Backend (Node.js)
 cd ../Backend
@@ -141,6 +140,8 @@ Install ALB Ingress Controller (via Helm or YAML)
 Annotate the ingress resources with ALB-specific configurations
 
 Ensure proper IAM roles and permissions are attached to your cluster
+
+---
 
 ## 🌐 Application Access
 
